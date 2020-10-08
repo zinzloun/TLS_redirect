@@ -39,6 +39,37 @@ Here install Stunell and configure to forward the traffic to the attacker machin
   tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      4687/stunnel4       
 ```
 #### The attacker machine
-- IP 10.0.2.5
+- IP 10.0.2.10
+
+Here I had to install netcat:
+```
+sudo yum install nc
+```
+Then I configured the firewall to allow incoming connection from the redirector as follows:
+```
+sudo firewall-cmd --new-zone=redPar --permanent
+sudo firewall-cmd --reload
+sudo firewall-cmd --zone=redPar --add-source=10.0.2.5/32 --permanent
+sudo firewall-cmd --zone=redPar --add-port=6666/tcp --permanent
+sudo firewall-cmd --reload
+```
+Verify the configuration:
+```
+ sudo firewall-cmd --zone=redPar --list-all
+  redPar (active)
+    target: default
+    icmp-block-inversion: no
+    interfaces:
+    sources: 10.0.2.5/32
+    services:
+    ports: 6666/tcp
+    protocols:
+    masquerade: no
+    forward-ports:
+    source-ports:
+    icmp-blocks:
+    rich rules:
+```
+
 
   

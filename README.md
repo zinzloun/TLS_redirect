@@ -70,6 +70,10 @@ Verify the configuration:
     icmp-blocks:
     rich rules:
 ```
+Finally lunch the listener:
+```
+sudo nc -lvp 6666
+```
 
 
   

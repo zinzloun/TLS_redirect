@@ -70,6 +70,11 @@ Verify the configuration:
     icmp-blocks:
     rich rules:
 ```
+Eventually to delete the zone issue:
+```
+sudo firewall-cmd --permanent --delete-zone=redPar
+sudo firewall-cmd --reload
+```
 Finally lunch the listener:
 ```
 sudo nc -lvp 6666

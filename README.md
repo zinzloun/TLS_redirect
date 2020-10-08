@@ -13,5 +13,7 @@ Eventually we can concetrate our effort in hardening the CentOS server (attacker
 ### LAB configuration
 #### Victim machine. 
 - IP 192.168.1.6
-- Download the compiled socat for windows from here: https://github.com/zinzloun/TLS_redirect/raw/main/socat-1.7.3.2-1-x86_64.zip
-Unzip the file e move the unzipped folder where you prefer, of course the folder is the position from where we will execute our payload. For convenience I put the folder into the enviroment PATH variable
+- Download the compiled socat for windows from here: https://github.com/zinzloun/TLS_redirect/raw/main/socat-1.7.3.2-1-x86_64.zip. Unzip the file e move the unzipped folder where you prefer, of course the folder is the position from where we will execute our payload. For convenience I put the folder into the enviroment PATH variable
+#### TLS redirector
+- Dual homed
+  - IP 192.168.17 that act as public interface

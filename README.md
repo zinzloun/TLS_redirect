@@ -92,7 +92,9 @@ We can inspect the traffic usign Wireshark*:
 <br>![Screenshot](ssl_hand.png)<br>
 
 ## Conclusion
+
 This is a simple architecture that would require a little built effort, a trusted public IP and eventually a valid TLS certificate are necessarty to work better, even if the last one is not a strict requirement as long as we are able to bypass the certificate validation on the victim, like in this scenario. Of course if the redirector is compromised it can reveal the private IP address of the attacker but since this is not public one it can be easely changed. In a real engagment of course we have to hardening even the redirector leaving open on the public interface only the port 443, the managmente will be performend throught the private interface. At least a host firewall is stongly recommended even on the redirector.
+
 ---
 **NOTE**
 ###### *If your Lab (as mine) is created using a virtualizer (e.g. Virtualbox) remember that you can not itercept any traffics with a bridged mode network configuration on the host machine, since it bypass the host OS network stack entirely. Here I'm running Wireshark on the guest Parrot OS redirector*

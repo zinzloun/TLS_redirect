@@ -93,7 +93,7 @@ We can inspect the traffic usign Wireshark*:
 
 ## Conclusion
 
-This is a simple architecture that would require a little built effort, a trusted public IP and eventually a valid TLS certificate are necessarty to work better, even if the last one is not a strict requirement as long as we are able to bypass the certificate validation on the victim, like in this scenario. Of course if the redirector is compromised it can reveal the private IP address of the attacker but since this is not public one it can be easely changed. In a real engagment of course we have to hardening even the redirector leaving open on the public interface only the port 443, the managmente will be performend throught the private interface. At least a host firewall is stongly recommended even on the redirector.
+This is a simple architecture that would require a little built effort, a trusted public IP and eventually a valid TLS certificate are necessarty to work better, even if the last one is not a strict requirement as long as we are able to bypass the certificate validation on the victim, like in this scenario. Of course if the redirector is compromised it can reveal the private IP address of the attacker but since this is not public one it can be easely changed. In a real engagment of course we have to hardening even the redirector leaving open on the public interface only the port 443, the managmente will be performend through the private interface. At least a host firewall is stongly recommended even on the redirector.
 
 ---
 **NOTE**

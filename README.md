@@ -89,7 +89,7 @@ We can follow the stream usign Wireshark
 
   
 ---
-**NOTE**
+<b>NOTE</b>
 <small>
 If your Lab (as mine) is created using a virtualizer (e.g. Virtualbox) remember that you can not itercept any traffics with a bridged mode network configuration on the host machine, since it bypass the host OS network stack entirely. Here I'm running Wireshark on the guest Parrot OS redirector
 </small>

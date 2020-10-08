@@ -11,7 +11,7 @@ Eventually we can concetrate our effort in hardening the CentOS server (attacker
 1. Parrot OS machine with Stunnel service that will redirect the incoming TLS connection to...
 1. Attacker machine, a CentOS 8 server that will get the reverse shell not encrypted
 ### LAB configuration
-Victim machine. 
+#### Victim machine. 
 - IP 192.168.1.6
 - Download the compiled socat for windows from here: https://github.com/zinzloun/TLS_redirect/raw/main/socat-1.7.3.2-1-x86_64.zip
 Unzip the file e move the unzipped folder where you prefer, of course the folder is the position from where we will execute our payload. For convenience I put the folder into the enviroment PATH variable

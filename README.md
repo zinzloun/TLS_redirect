@@ -20,7 +20,7 @@ Download the compiled socat for windows from here: https://github.com/zinzloun/T
 
 #### TLS redirector
 - Dual homed
-  - IP 192.168.17 that acts as public interface
+  - IP 192.168.1.7 that acts as public interface
   - IP 10.0.2.5 that acts as internal interface
 
 Here install Stunell and configure to forward the traffic to the attacker machine using netcat. I will skip the part about how to create a self signed certificate, just browse the web. The configuration is self explanatory:

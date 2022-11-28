@@ -11,6 +11,7 @@ Eventually we can concetrate our effort in hardening the CentOS server (attacker
 1. Win10Pro machine with AV and firewall in place. The payload will be a simple socat openssl reverse shell
 1. Parrot OS machine with Stunnel service that will redirect the incoming TLS connection to...
 1. Attacker machine, a CentOS 8 server that will get the reverse shell not encrypted
+
 ### LAB configuration
 
 #### Victim machine. 

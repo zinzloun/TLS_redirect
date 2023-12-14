@@ -26,7 +26,7 @@ Download the compiled socat for windows from here: https://github.com/zinzloun/T
 
 Install Stunell and configure to forward the traffic to the attacker machine using netcat. I will skip the part about how to create a self signed certificate, just browse the web. The configuration is self explanatory:
   ```
-  sudo apt install stunnell4
+  sudo apt install stunnel4
   cat /etc/stunnel/stunnel.conf 
   [nc]
   client = no

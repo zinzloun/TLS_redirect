@@ -93,9 +93,7 @@ The flow is the follows where (1) is the victim, (2) is the redirector and (3) i
 We can inspect the traffic usign Wireshark*:
 <br>![Screenshot](ssl_hand.png)<br>
 
-## Conclusion
-
-This is a simple architecture that would require a little built effort, a trusted public IP and eventually a valid TLS certificate are necessarty to work better, even if the last one is not a strict requirement as long as we are able to bypass the certificate validation on the victim, like in this scenario. Of course if the redirector is compromised it can reveal the private IP address of the attacker but since this is not public one it can be easely reconfigured. In a real engagment of course we will have a firewall\router in front of the redirector with a NAT\PAT implemented to the port 443, leaving only this service opened. The managment of the redirector will be performend through the private interface.
+<b>Enjoy</b>
 
 ---
 **NOTE**
